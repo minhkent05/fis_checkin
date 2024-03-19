@@ -24,7 +24,7 @@ function Home(props) {
         }
         else if (res.data.message == '-1') {
             toast.warning(res.data.message)
-            navigate('/fis_checkin')
+            navigate('/')
         }
         else (
             toast.success(res.data.message)
@@ -42,7 +42,7 @@ function Home(props) {
         const res = await axios.post('https://ddc.fis.vn/fis0/api/checkout_all', user, { headers: { "Authorization": `Bearer ${getToken}` } })
         if (res.data.resultCode == -1) {
             toast.warning(res.data.message)
-            navigate('/fis_checkin')
+            navigate('/')
         }
         else (
             toast.success(res.data.message)
