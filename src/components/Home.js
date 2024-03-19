@@ -28,6 +28,9 @@ function Home(props) {
         }
         else (
             toast.success(res.data.message)
+            setTimeout(()=>{
+                window.location.reload()
+            },1000)
         )
         const timeCheckin = res.data.data.checkinTime
         const dataTime = timeCheckin.substring(11, 19)
@@ -43,6 +46,9 @@ function Home(props) {
         }
         else (
             toast.success(res.data.message)
+            setTimeout(()=>{
+                window.location.reload()
+            },1000)
         )
         const timeCheckout = res.data.data.checkinTime
         const dataTime = timeCheckout.substring(11, 19)
