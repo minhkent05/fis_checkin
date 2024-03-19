@@ -13,10 +13,10 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path='/' element={ <Dangnhap />} />
+          <Route path='/fis_checkin' element={ <Dangnhap />} />
         </Routes>
         <Routes>
-          <Route path='/home' element={ <Home />} />
+          <Route path='/fis_checkin/home' element={ <Home />} />
         </Routes>
         <ToastContainer
           position="top-right"
