@@ -23,7 +23,7 @@ function Dangnhap(props) {
         else {
             toast.success('Đăng nhập thành công')
             localStorage.setItem('token', res.data.data.token)
-            navigate('/home')
+            navigate('/fis_checkin/home')
         }
     }
     const [randomNumber, setRandomNumber] = useState(null);
